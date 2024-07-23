@@ -22,3 +22,8 @@ variable "address_space" {
     description = "(Required) The address space that is used the virtual network."
     type = list(string)
 }
+
+variable "log_analytics_workspace_id" {
+  description = "(Required) ID of the log analytics workspace to which the diagnostic setting will send the logs of this resource."
+  type        = string
+}
